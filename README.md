@@ -7,7 +7,7 @@ HDInsight : Hadoop - Hive - Microsoft Business Intelligence
 
 The UDF Explode() take an array and explode it : SELECT EXPLODE(COL) AS MyCOL FROM MyTable;
 
-     Col  		   MyCOL
+     Col       	 MyCOL
   | [1,2] |	->	|  1  |
   | [3,4] |		|  2  |
   				|  3  |
@@ -48,6 +48,6 @@ With Multiple LATERAL VIEW :
 -------------------------------------------------------------------------------------------------------------
 Instalation : 
 
-hive>  ADD JAR /#PATH#/MyExplode.jar;
+hive>  ADD JAR /#PATH#/MyExplode.jar; 
 hive>  CREATE TEMPORARY FUNCTION MyExplode AS 'com.example.hive.udf.MyExplode';
 
