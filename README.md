@@ -3,13 +3,15 @@ HDInsight
 
 HDInsight : Hadoop - Hive - Microsoft Business Intelligence
 
+-------------------------------------------------------------------------------------------------------------
+
 The UDF Explode() take an array and explode it : SELECT EXPLODE(COL) AS MyCOL FROM MyTable;
 
      Col  		   MyCOL
   | [1,2] |	->	|  1  |
-  | [3,4] |		  |  2  |
-  				      |  3  |
-  				      |  4  |
+  | [3,4] |		|  2  |
+  				|  3  |
+  				|  4  |
 
 With LATERAL VIEW : SELECT ID, MyCol FROM MyTable LATERAL VIEW EXPLODE(Col) MyVirtualTable AS MyCol;
 
