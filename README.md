@@ -48,4 +48,4 @@ Instalation :
 
 hive>  ADD JAR /#PATH#/MyExplode.jar;
 hive>  CREATE TEMPORARY FUNCTION MyExplode AS 'com.example.hive.udf.MyExplode';
--------------------------------------------------------------------------------------------------------------
+
